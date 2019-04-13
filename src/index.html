@@ -163,7 +163,7 @@
                 }
             }
             this._div.innerHTML = '<h4>Wahlbezirk: </h4>' +  (props ?
-            '<b>' + props.STI + '</b><br /> Bisherige Stimmen: ' + votes + '<br/> Wahlberechtigte: ' + props.Wahlberechtigte_insgesamt + '<br/> Bisherige Wahlbeteiligung: ' + (votes / props.Wahlberechtigte_insgesamt *100).toFixed(2) + '% </b><br /> Wahlbeteiligung 2014: ' + props.Wahlbeteiligung.toFixed(0) + "%" : 'keine Information');
+            '<b>' + props.STI + '</b><br /> Bisherige Stimmen: ' + votes + '<br/> Wahlberechtigte: ' + props.WahlberechtigteInsgesamt + '<br/> Bisherige Wahlbeteiligung: ' + (votes / props.WahlberechtigteInsgesamt *100).toFixed(1) + '% </b><br /> Wahlbeteiligung 2014: ' + props.WahlbeteiligungInProzent.toFixed(0) + "%" : 'keine Information');
         };
         
         info.addTo(mymap);
